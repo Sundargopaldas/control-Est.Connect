@@ -22,7 +22,7 @@ function carregarDadosClientes() {
         
         // Criando o link para a página de produtos do cliente
         const linkProdutos = document.createElement("a");
-        linkProdutos.href = `listaDeProdutos.html?clienteId=${cliente.id}`;
+        linkProdutos.href = `listadeprodutos.html?clienteId=${cliente.id}`;
         linkProdutos.textContent = cliente.nome;
         
         infoCliente.appendChild(document.createTextNode(`ID: ${cliente.id}, Nome: `));

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="PaginaDadosClientes.html"><button id="btnVoltar">Voltar</button></a>
+        <h1>Lista de Produtos</h1>
+        <div id="clienteInfo"></div>
+        <button id="btnAbrirModal">Adicionar Produto</button>
+        <div id="listaProdutos"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cadastrar Produto</h2>
+            <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+            <input type="text" id="idProduto" placeholder="ID do Produto">
+            <button id="btnCadastrarProduto">Cadastrar</button>
+        </div>
+    </div>
+
+    <script src="ListaDeProdutos.js"></script>
+</body>
+</html>

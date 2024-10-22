@@ -1,0 +1,84 @@
+
+       /* Estilos para a tabela de histórico */
+
+body{
+    background-color: #2a86e7;
+}
+.btn-back{
+ background-color: #ef4444;
+ margin-bottom: 30px;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;  
+    margin-left: 9px;
+}   
+
+
+.historico-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #dde2e5;
+    border-radius: 10px ;
+}
+.title{
+    text-align: center;
+}
+.historico-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.historico-table th,
+.historico-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.historico-table th {
+    background-color: #3fbde3;
+    font-weight: bold;
+}
+
+.historico-table td img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.historico-table .actions-column {
+    width: 80px;
+}
+
+.historico-table .remove-btn {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.historico-table .remove-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .historico-table {
+        font-size: 12px;
+    }
+
+    .historico-table th,
+    .historico-table td {
+        padding: 6px;
+    }
+
+    .historico-table .actions-column {
+        width: 60px;
+    }
+}
